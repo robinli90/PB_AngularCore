@@ -4,4 +4,12 @@
 
 <p>Current count: <strong>{{ currentCount }}</strong></p>
 
-<button (click)="incrementCounter()">Increment</button>
+<body>
+    <button class="greenColor" (click)="incrementCounter()">Increment</button>
+    <button class="redColor" (click)="decrementCounter()">Decrement</button>
+</body>
+
+<br>
+<p>Full Name: <input type="text" (input)="textChange($event)" placeholder="Full Name"/></p>
+<p>Your current first name is: <strong>{{ user?.firstName | formatName }}</strong></p>
+<p>Your current last name is: <strong>{{ user?.lastName | formatName }}</strong></p>

@@ -58,5 +58,26 @@
     "webpack-hot-middleware": "2.18.2",
     "webpack-merge": "4.1.0",
     "zone.js": "0.8.12"
-  }
+  },
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore.Sqlite": "2.0.1",
+    "Microsoft.EntityFrameworkCore.Design": {
+      "version": "2.0.1",
+      "type": "build" 
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "2.0.3"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": "2.0.1" 
+  } 
 }
